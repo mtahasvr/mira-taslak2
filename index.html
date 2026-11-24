@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="MİRA Restaurant Malatya. Özenle hazırlanan lezzetler, şık atmosfer ve unutulmaz bir yemek deneyimi.">
+    <title>MİRA Restaurant | Malatya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header" id="ust">
+        <nav class="navbar container">
+            <a href="#anasayfa" class="logo">MİRA<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Menüyü aç veya kapat"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#menu">Menümüz</a></li>
+                <li><a href="#rezervasyon">Rezervasyon</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+
+            <a href="#rezervasyon" class="nav-button">Masa Ayırt</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="anasayfa" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content reveal">
+                <span class="eyebrow">MİRA RESTAURANT · MALATYA</span>
+                <h1>Lezzetin<br><span>En Şık Hali</span></h1>
+                <p>Özenle hazırlanan lezzetler, sıcak bir atmosfer ve unutulmaz anlar.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="button button-gold">Menümüzü Keşfet</a>
+                    <a href="#hakkimizda" class="button button-outline">Bizi Tanıyın</a>
+                </div>
+            </div>
+            <a href="#hakkimizda" class="scroll-down" aria-label="Aşağı kaydır">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- HAKKIMIZDA -->
+        <section id="hakkimizda" class="about section-padding">
+            <div class="container about-grid">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000"
+                         alt="Şık restoran yemek masası" loading="lazy">
+                    <div class="image-label">
+                        <span>Bir sofradan</span>
+                        <strong>daha fazlası.</strong>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <span class="eyebrow">HİKÂYEMİZ</span>
+                    <h2>Lezzet ve zarafetin <span>buluşma noktası.</span></h2>
+                    <p>
+                        MİRA Restaurant olarak misafirlerimize yalnızca yemek
+                        değil, keyifle hatırlanacak bir deneyim sunmayı hedefliyoruz.
+                    </p>
+                    <p>
+                        Özenle seçilen malzemeler, iştah açan sunumlar ve
+                        sıcak atmosferimizle sofranızdaki her anı özel kılmak istiyoruz.
+                    </p>
+                    <a href="#menu" class="text-link">Lezzetlerimizi keşfet <span>→</span></a>
+
+                    <div class="about-features">
+                        <div><strong>Özenli</strong><span>Malzeme seçimi</span></div>
+                        <div><strong>Şık</strong><span>Sunum anlayışı</span></div>
+                        <div><strong>Sıcak</strong><span>Atmosfer</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENÜ -->
+        <section id="menu" class="menu-section section-padding">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">MİRA LEZZETLERİ</span>
+                    <h2>Menümüzü <span>Keşfedin</span></h2>
+                    <p>Her damak tadına hitap eden lezzetlerimizi inceleyin.</p>
+                </div>
+
+                <div class="menu-tools reveal">
+                    <div class="filter-buttons" aria-label="Menü kategorileri">
+                        <button class="filter-btn active" data-filter="all">Tümü</button>
+                        <button class="filter-btn" data-filter="ana">Ana Yemek</button>
+                        <button class="filter-btn" data-filter="pizza">Pizza</button>
+                        <button class="filter-btn" data-filter="burger">Burger</button>
+                    </div>
+
+                    <label class="search-box">
+                        <span aria-hidden="true">⌕</span>
+                        <input type="search" id="menuSearch" placeholder="Yemek ara..." aria-label="Menüde yemek ara">
+                    </label>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+
+                    <article class="food-card reveal" data-category="ana" data-name="ızgara köfte">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=700"
+                                 alt="Izgara köfte" loading="lazy">
+                            <span class="food-tag">Şefin önerisi</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title"><h3>Izgara Köfte</h3><strong>₺350</strong></div>
+                            <p>Özel baharatlarla hazırlanan nefis ızgara köfte.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card reveal" data-category="pizza" data-name="karışık pizza">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
+                                 alt="Karışık pizza" loading="lazy">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title"><h3>Karışık Pizza</h3><strong>₺290</strong></div>
+                            <p>Bol malzemeli, özel soslu İtalyan lezzeti.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card reveal" data-category="burger" data-name="etli burger">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
+                                 alt="Etli burger" loading="lazy">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title"><h3>Etli Burger</h3><strong>₺320</strong></div>
+                            <p>Özel sos ve taze malzemelerle hazırlanır.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card reveal" data-category="ana" data-name="ızgara tavuk">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=700"
+                                 alt="Izgara tavuk" loading="lazy">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title"><h3>Izgara Tavuk</h3><strong>₺310</strong></div>
+                            <p>Özenle marine edilmiş ızgara tavuk.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card reveal" data-category="pizza" data-name="margarita pizza">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700"
+                                 alt="Margarita pizza" loading="lazy">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title"><h3>Margarita Pizza</h3><strong>₺270</strong></div>
+                            <p>Domates sosu, mozzarella ve fesleğen.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card reveal" data-category="burger" data-name="cheeseburger">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=700"
+                                 alt="Cheeseburger" loading="lazy">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title"><h3>Cheeseburger</h3><strong>₺340</strong></div>
+                            <p>Peynir ve özel sosla hazırlanan burger.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="no-results" id="noResults" hidden>Aradığınız yemek bulunamadı.</p>
+                <p class="menu-note">Menüdeki ürün ve fiyatlar örnek olarak hazırlanmıştır.</p>
+            </div>
+        </section>
+
+        <!-- REZERVASYON -->
+        <section id="rezervasyon" class="reservation section-padding">
+            <div class="container reservation-grid">
+                <div class="reservation-content reveal">
+                    <span class="eyebrow">SİZİ BEKLİYORUZ</span>
+                    <h2>Soframızda <span>yeriniz hazır.</span></h2>
+                    <p>
+                        Sevdiklerinizle keyifli bir yemek için rezervasyon
+                        talebinizi form üzerinden oluşturabilirsiniz.
+                    </p>
+                    <div class="reservation-detail">
+                        <span>✦</span>
+                        <div><strong>Kolay talep oluşturma</strong><small>Bilgilerinizi girin, talep özetinizi görün.</small></div>
+                    </div>
+                    <div class="reservation-detail">
+                        <span>✦</span>
+                        <div><strong>Esnek saat seçenekleri</strong><small>Size uygun saat aralığını seçin.</small></div>
+                    </div>
+                </div>
+
+                <form id="rezervasyonForm" class="reservation-form" novalidate>
+                    <h3>Rezervasyon Talebi</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ad">Adınız Soyadınız</label>
+                            <input type="text" id="ad" name="ad" placeholder="Adınız Soyadınız"
+                                   autocomplete="name" minlength="2" maxlength="60" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefon">Telefon Numaranız</label>
+                            <input type="tel" id="telefon" name="telefon" placeholder="05XX XXX XX XX"
+                                   autocomplete="tel" inputmode="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="kisi">Kişi Sayısı</label>
+                            <select id="kisi" name="kisi" required>
+                                <option value="">Seçiniz</option>
+                                <option value="1">1 Kişi</option>
+                                <option value="2">2 Kişi</option>
+                                <option value="3">3 Kişi</option>
+                                <option value="4">4 Kişi</option>
+                                <option value="5">5 Kişi</option>
+                                <option value="6">6 Kişi</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tarih">Tarih</label>
+                            <input type="date" id="tarih" name="tarih" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="saat">Saat</label>
+                        <select id="saat" name="saat" required>
+                            <option value="">Saat seçiniz</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="not">Eklemek istediğiniz not (isteğe bağlı)</label>
+                        <textarea id="not" name="not" rows="3" maxlength="300"
+                                  placeholder="Varsa özel isteğiniz..."></textarea>
+                    </div>
+
+                    <button type="submit" class="button button-gold submit-button">
+                        Rezervasyon Talebi Oluştur <span>→</span>
+                    </button>
+
+                    <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+                    <p class="form-disclaimer">Bu demo form talebi yalnızca ekranda gösterir; restorana göndermez.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- İLETİŞİM -->
+        <section id="iletisim" class="contact section-padding">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">BİZE ULAŞIN</span>
+                    <h2>Tanışalım <span>mı?</span></h2>
+                    <p>Sizi MİRA Restaurant'ta ağırlamaktan mutluluk duyarız.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card reveal">
+                        <span class="contact-icon">☎</span>
+                        <h3>Telefon</h3>
+                        <p>Telefon numarası eklenecek</p>
+                    </div>
+                    <div class="contact-card reveal">
+                        <span class="contact-icon">⌖</span>
+                        <h3>Adres</h3>
+                        <p>Malatya / Türkiye</p>
+                    </div>
+                    <div class="contact-card reveal">
+                        <span class="contact-icon">◷</span>
+                        <h3>Çalışma Saatleri</h3>
+                        <p>Her gün: 10.00 – 23.00</p>
+                    </div>
+                </div>
+
+                <div class="map-area reveal">
+                    <iframe
+                        title="Malatya haritası"
+                        src=https://maps.google.com/maps?q=Malatya%2C%20T%C3%BCrkiye&t=&z=13&ie=UTF8&iwloc=&output=embed
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <p>Harita Malatya merkezini gösterir. Restoranın tam adresi eklendiğinde konum güncellenmelidir.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#anasayfa" class="logo">MİRA<span>.</span></a>
+            <p>Lezzetin en şık hali.</p>
+            <div class="footer-links">
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#menu">Menümüz</a>
+                <a href="#rezervasyon">Rezervasyon</a>
+                <a href="#iletisim">İletişim</a>
+            </div>
+            <small>© <span id="year"></span> MİRA Restaurant. Tüm hakları saklıdır.</small>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Sayfanın başına dön">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
